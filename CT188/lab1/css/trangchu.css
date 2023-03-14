@@ -10,12 +10,21 @@ body {
 }
 
 header {
+  display: flex;
+  position: relative;
   border: 1px;
+  align-items: center;
+  z-index: 1;
   padding: 0 5px;
   border-radius: 5px solid #ccc7c8;
   height: 100px;
   margin-bottom: 2px;
   background-image: url(/lab2/images/header.png);
+}
+
+header .search,
+header .cart {
+  float: right;
 }
 
 /* Khai báo các rule cho các hình ảnh header */
@@ -53,7 +62,9 @@ header {
 nav {
   height: 20px;
 }
-
+nav p {
+  display: inline-block;
+}
 nav a {
   margin: 3px;
   border: 1px solid #fff;
