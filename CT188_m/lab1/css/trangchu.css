@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
 body {
   top: 0;
   border: 1px;
@@ -5,20 +16,20 @@ body {
   width: 1024px;
   margin: 0 auto;
   padding: 0 5px;
-  font-size: 1.2em;
-  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
 }
 
 /* HEADER */
 .header {
   z-index: 1;
-  border: 1px;
-  padding: 10px;
   height: 100px;
   padding: 0 5px;
+  position: relative;
   margin-bottom: 2px;
   align-items: center;
-  border-radius: 5px solid #ccc7c8;
+  border-radius: 5px;
+  background-size: cover;
+  border: 1px solid #ccc7c8;
   background-image: url(/lab2/images/header.png);
 }
 
@@ -36,6 +47,7 @@ body {
 
 .menu-item {
   display: inline-block;
+  margin: 1.5rem 0;
 }
 
 nav a {
@@ -58,7 +70,7 @@ nav a {
 }
 
 .img-transfer {
-  /* z-index: -1; */
+  width: 1024px;
 }
 
 /* Khai báo các rule cho các hình ảnh header */
@@ -92,7 +104,64 @@ nav a {
   animation-fill-mode: forwards;
 }
 
+.search-btn {
+  padding: 4px;
+  max-width: 30px;
+  color: #fff;
+  text-align: center;
+  background-color: #cddc39;
+}
+
+.shopping-cart-btn {
+  padding: 4px;
+  max-width: 30px;
+  color: #ed4190;
+  text-align: center;
+  background-color: #cddc39;
+}
+
 /* END HEADER */
+
+main {
+  display: grid;
+  border: 1px solid #ccc7c8;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+/* FOOTER */
+
+footer {
+  position: relative;
+  margin: 2px 0;
+  padding: 0 5px;
+  /* height: 20px; */
+  border-radius: 5px;
+  border: 1px solid #ccc7c8;
+  border-collapse: collapse;
+  text-align: center;
+  line-height: 2.5em;
+}
+
+.brands {
+  color: #ed4190;
+  text-decoration: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  padding: 10px;
+  color: #ed4190;
+  text-align: center;
+  z-index: 100;
+}
+
+.back-to-top-img {
+  height: 40px;
+  width: 40px;
+}
 
 /* KEYFRAMES */
 /* Khai báo keyframes cho các hình ảnh header */
